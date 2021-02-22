@@ -1,0 +1,208 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: Verdana;
+    color: #222;
+}
+
+
+header {
+    font-weight: bold;
+}
+
+.headerlogo {
+    float: left;
+    margin-right: 10px;
+}
+    .headerlogo > img {
+        height: 150px;
+        width: 150px;
+    }
+
+.history > img {
+    height: 350px;
+    width: 350px;
+    }
+#headername {
+    font-size: 50px;
+    font-family: Verdana, Tahoma, sans-serif;
+    text-shadow: 5px 5px 5px #5f2c17;
+    color: #603813;
+    padding: 15px;
+    margin: 8px 0px;
+    font-weight: bold;
+}
+
+.searchbox {
+    float: right;
+    padding: 5px;
+    margin: 10px 10px;
+    width: 200px;
+}
+
+.navbar{
+    padding: .8rem;
+    color: blanchedalmond;
+}
+
+.navbar-nav li{
+    padding-right: 20px;
+}
+
+.nav-link{
+    font-size: 1.1em;
+}
+
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-caption{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-caption h1{
+    font-size: 500%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 15px #000;
+}
+
+.carousel-caption h3{
+    font-size: 200%;
+    font-weight: 500;
+    text-shadow: 1px 1px 10px #000;
+    padding-bottom: 1rem;
+}
+
+.padding{
+    padding-bottom: 2rem;
+}
+
+
+.which, .what, .why{
+    font-size: 4em;
+    margin: 1rem;
+}
+.product-grid {
+    padding: 20px 0px;
+}
+    .product-grid:hover{
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+.product {
+    position: relative;
+}
+    .product:hover .overlay{
+        opacity: 1;
+    }
+
+.overlay {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transform: .5s ease;
+    background-color: rgba(67, 68, 68, 0.7);
+}
+
+
+
+.detail {
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.buy {
+    background-color: transparent;
+    border-radius: 0;
+    border: 1px solid gray;
+    width: 100%;
+    color: lightgreen;
+    margin-top: 20px;
+    font-family: Verdana;
+}
+    .buy:hover {
+        background-color: gray;
+        color: green;
+    }
+
+footer{
+    background-color: #6f4e37;
+    color: #d5d5d5;
+    padding-top: 2rem;
+}
+
+hr.line{
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
+
+
+hr.line-100{
+    border-top: 1px solid #d5d5d5;
+    width: 100%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
+/*---Media Queries ---*/
+
+
+@media (max-width: 768px){
+    .carousel-caption{
+        top: 45%;
+    }
+    
+    .carousel-caption h1{
+        font-size: 350%;
+    }
+    
+    .carousel-caption h3{
+        font-size: 140%;
+        font-weight: 400;
+        padding-bottom: .2rem;
+    }
+    .carousel-caption .btn{
+        font-size: 95%;
+        padding: 8px 14px;
+    }
+
+}
+
+@media (max-width: 576px){
+    .carousel-caption{
+        top: 40%;
+    }
+    
+    .carousel-caption h1{
+        font-size: 250%;
+    }
+    
+    .carousel-caption h3{
+        font-size: 110%
+    }
+    .carousel-caption .btn{
+        font-size: 90%;
+        padding: 4px 8px;
+    }
+    .carousel-indicators{
+        display: none;
+    }
+    .display-4{
+        font-size: 160%;
+    }
+}
